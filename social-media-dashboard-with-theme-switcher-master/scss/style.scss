@@ -137,11 +137,44 @@ label:active:after {
 .cards-top{
 	display: flex; /* or inline-flex */
 	flex-direction: row;
-	border: 2px solid green;
 	justify-content:space-between;
+
+	.card{
+		background:red/*var(--color-card-bg)*/;
+		flex-basis: 23%;
+		border-radius:5px;
+		overflow: hidden;
+		border-top: 5px solid black;
+
+		.wrapper{
+			border-top:5px solid black;
+			padding: 10px;
+			overflow:hidden;
+			span{
+				display: block;
+				text-align:center;
+			}
+		}
+	}
 }
-.card{
-	border:0px solid red;
-	background:var(--color-card-bg);
-	padding: 30px;//////
+
+.cards-bottom{
+	display: flex; /* or inline-flex */
+	flex-direction: row;
+	// border: 2px solid green;
+	justify-content:space-between;
+	flex-wrap:wrap;
+
+	.card-small{
+		// border:1px solid red;
+		background:red;
+		// background:var(--color-card-bg);
+		flex-basis: 23%;
+		margin-bottom: 20px;
+		border-radius:5px;
+
+		.wrapper{
+			padding: 10px;
+		}
+	}
 }
