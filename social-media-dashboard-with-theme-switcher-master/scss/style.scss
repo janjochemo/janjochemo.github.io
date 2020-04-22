@@ -55,6 +55,8 @@ body {
 	font-weight:400;
 }
 h1{
+	font-size:28px;
+	font-weight: 700;
 	color: var(--color-heading);
 }
 .card, .card-small{
@@ -64,6 +66,10 @@ h1{
 .card{}
 
 span.subtitle{
+	display:block;
+	padding-top:7px;
+	font-size:14px;
+	font-weight: 700;
 	color: var(--color-text);
 	opacity: 0.5;
 }
@@ -141,17 +147,55 @@ label:active:after {
 	flex-direction: row;
 	justify-content:space-between;
 
+	.instagram:before{
+		background: rgba(179,113,6,1);
+		background: -moz-linear-gradient(left, rgba(179,113,6,1) 0%, rgba(148,44,98,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,113,6,1)), color-stop(100%, rgba(148,44,98,1)));
+		background: -webkit-linear-gradient(left, rgba(179,113,6,1) 0%, rgba(148,44,98,1) 100%);
+		background: -o-linear-gradient(left, rgba(179,113,6,1) 0%, rgba(148,44,98,1) 100%);
+		background: -ms-linear-gradient(left, rgba(179,113,6,1) 0%, rgba(148,44,98,1) 100%);
+		background: linear-gradient(to right, rgba(179,113,6,1) 0%, rgba(148,44,98,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b37106', endColorstr='#942c62', GradientType=1 );
+	}
+	.facebook:before{}
+	.twitter:before{}
+	.youtube:before{}
+	
+	.card:before{
+		content:'';
+		height:5px;
+		width: 100%;
+		position:absolute;
+		left:0;
+		top:0;
+		right:0;
+		z-index:100;
+	}
 	.card{
+		position:relative;
 		background:#efefef;/*var(--color-card-bg)*/;
 		flex-basis: 23%;
 		border-radius:5px;
 		overflow: hidden;
-		border-top: 5px solid black;
 
+
+		.facebook{
+			border-top:4px solid hsl(195, 100%, 50%)
+		}
+		.twitter{
+			border-top:4px solid hsl(203, 89%, 53%)
+		}
+		// .instagram{
+		// 	border-top:4px solid hsl(203, 89%, 53%)
+		// }
+		.youtube{
+			border-top:4px solid hsl(203, 89%, 53%)
+		}
 		.wrapper{
-			border-top:5px solid black;
+			// border-top:5px solid black;
 			padding: 26px 0;
 			overflow:hidden;
+
 			span{
 				display: block;
 				text-align:center;
@@ -199,9 +243,18 @@ label:active:after {
 				border:0px solid red;
 				background-repeat:no-repeat;
 				background-position: center center;
+				position:relative;
+				left:-5px;
+			}
+
+			.green{
+				color: hsl(163, 72%, 41%);
 			}
 			.green:before{
 				background-image:url('images/up-arrow.svg');
+			}
+			.red{
+				color: hsl(356, 69%, 56%);
 			}
 			.red:before{
 				background-image:url('images/down-arrow.svg');
@@ -214,10 +267,13 @@ label:active:after {
 			.number-text{
 				font-size: 12px;
 				font-weight:400;
-		    text-transform: uppercase;
-		    letter-spacing: 4px;
+				text-transform: uppercase;
+				letter-spacing: 4px;
 				padding:0 0 23px 0;
 			}
+		}
+		.card:before{
+
 		}
 	}
 }
@@ -250,4 +306,21 @@ label:active:after {
 .number{
 	font-family:'Inter';
 	font-weight:700;
+}
+
+header{
+	padding-top:40px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+html:before{
+	content:'';
+	position:absolute;
+	z-index:-1;
+	height: 246px;
+	width: 100%;
+	background-color: red/* hsl(0, 0%, 100%)*/;
+
 }
