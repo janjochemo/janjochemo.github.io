@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
    <meta charset="UTF-8">
@@ -11,24 +11,20 @@
 
    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
-
    <link rel="stylesheet" href="style.css" type="text/css">
-
    <link rel="stylesheet" href="https://test.nvp-archief.nl/css/hiraku.css">
-
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-
    <style>
-      .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
 </head>
 
-<body>
+<body class="light">
+<!-- <body> -->
    <main>
       <div class="container">
          <header>
@@ -38,13 +34,17 @@
                <span class="subtitle">Total Followers: 23,004</span>
             </div>
 
-            <div class="flex-item">
+            <div class="flex-item switch">
+
                <div class="onoffswitch">
+                 <span>Dark mode</span>
+                 <span>
                   <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
                   <label class="onoffswitch-label" for="myonoffswitch"> <span class="onoffswitch-inner"></span>
                      <span class="onoffswitch-switch"></span>
 
                   </label>
+                </span>
                </div>
             </div>
 
@@ -101,10 +101,8 @@
             <div class="card-small social facebook">
                <div class="wrapper">
                   <span class="card-header">Page Views</span>
-
-                    <span class="number">87</span>
-                    <span>3%</span>
-
+                  <span class="number">87</span>
+                  <span class="number-status green">3%</span>
                </div>
             </div>
 
@@ -112,7 +110,7 @@
                <div class="wrapper">
                   <span class="card-header">Likes</span>
                   <span class="number">52</span>
-                  <span>2%</span>
+                    <span class="number-status red">2%</span>
                </div>
             </div>
 
@@ -120,7 +118,7 @@
                <div class="wrapper">
                   <span class="card-header"> Likes</span>
                   <span class="number"> 5462</span>
-                  <span> 2257%</span>
+                    <span class="number-status green">2257%</span>
                </div>
             </div>
 
@@ -128,7 +126,7 @@
                <div class="wrapper">
                   <span class="card-header"> Profile Views</span>
                   <span class="number"> 52k</span>
-                  <span> 1375%</span>
+                    <span class="number-status green">1375%</span>
                </div>
             </div>
 
@@ -136,7 +134,7 @@
                <div class="wrapper">
                   <span class="card-header"> Retweets</span>
                   <span class="number"> 117</span>
-                  <span> 303%</span>
+                  <span class="number-status green"> 303%</span>
                </div>
             </div>
 
@@ -144,7 +142,7 @@
                <div class="wrapper">
                   <span class="card-header"> Likes</span>
                   <span class="number"> 507</span>
-                  <span> 553%</span>
+                  <span class="number-status green"> 553%</span>
                </div>
             </div>
 
@@ -152,7 +150,7 @@
                <div class="wrapper">
                   <span class="card-header"> Likes</span>
                   <span class="number"> 107</span>
-                  <span> 19%</span>
+                  <span class="number-status red">19%</span>
                </div>
             </div>
 
@@ -160,7 +158,7 @@
                <div class="wrapper">
                   <span class="card-header"> Total Views</span>
                   <span class="number"> 1407</span>
-                  <span> 12%</span>
+                  <span class="number-status red">12%</span>
                </div>
             </div>
          </div>
@@ -168,7 +166,7 @@
          <div class="attribution">
 
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
+            Coded by <a href="mailto:janjochemo@gmail.com">Jan Jochem Overgaauw</a>.
          </div>
       </div>
    </main>
