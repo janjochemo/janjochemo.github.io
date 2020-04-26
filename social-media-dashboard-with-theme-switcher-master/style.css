@@ -102,7 +102,7 @@ span.subtitle {
   font-weight: 700;
   color: var(--color-text);
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-text);
 }
 
 @media (min-width: 992px) {
@@ -213,7 +213,7 @@ label:active:after {
   flex-wrap: wrap;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .cards-top {
     flex-direction: row;
   }
@@ -279,7 +279,7 @@ label:active:after {
   margin-bottom: 10px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .cards-top .card {
     flex-basis: 49%;
   }
@@ -347,7 +347,7 @@ label:active:after {
   flex-wrap: wrap;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .cards-bottom {
     flex-direction: row;
   }
@@ -361,7 +361,7 @@ label:active:after {
   height: 126px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .cards-bottom .card-small {
     flex-basis: 49%;
   }

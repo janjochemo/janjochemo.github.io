@@ -97,7 +97,7 @@ span.subtitle{
 	font-weight: 700;
 	color: var(--color-text);
 	padding-bottom: 20px;
-	border-bottom:1px solid black;
+	border-bottom:1px solid var(--color-text);
 	@media (min-width: 992px) {
 			border-bottom:0 none;
 	}
@@ -202,7 +202,7 @@ label:active:after {
 	display: flex; /* or inline-flex */
 	flex-direction: column;
 
-	@media (min-width: 375px) {
+	@media (min-width: 376px) {
 	flex-direction: row;
 	}
 
@@ -270,7 +270,7 @@ label:active:after {
 			overflow: hidden;
 			margin-bottom:10px;
 
-			@media (min-width: 375px) {
+			@media (min-width: 376px) {
 				flex-basis: 49%;
 			}
 			@media (min-width: 768px) {
@@ -328,7 +328,7 @@ label:active:after {
 	display: flex; /* or inline-flex */
 	flex-direction: column;
 
-	@media (min-width: 375px) {
+	@media (min-width: 376px) {
 	flex-direction: row;
 	}
 
@@ -341,7 +341,7 @@ label:active:after {
 		flex-basis: 100%;
 		margin-bottom: 20px;
 
-		@media (min-width: 375px) {
+		@media (min-width: 376px) {
 			flex-basis: 49%;
 
 		}
