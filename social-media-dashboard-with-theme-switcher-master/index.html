@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="light">
+<body class="dark">
 <!-- <body> -->
    <main>
       <div class="container">
@@ -172,13 +172,18 @@
    </main>
 </body>
 <script>
-   $('#myonoffswitch').click(function() {
-      $('.toggle').toggleClass('red green');
-   });
+
+   // $('#myonoffswitch').click(function() {
+   //    $('.toggle').toggleClass('red green');
+   // });
 
    // $('#myonoffswitch').change(function () {
-   //     $('body').toggleClass('dark-mode');
+   //     $('body').toggleClass('light');
    // });
+
+   $('#myonoffswitch').on('click', function() {
+  $('body').toggleClass("dark light");
+});
 </script>
 
 </html>
