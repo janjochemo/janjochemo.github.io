@@ -189,7 +189,7 @@ label:active:after {
   font-weight: bold;
   padding: 0;
   height: 23px;
-  color: var(--color-heading);
+  color: var(--color-text);
 }
 
 @media (min-width: 992px) {
