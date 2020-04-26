@@ -15,16 +15,9 @@
    <link rel="stylesheet" href="https://test.nvp-archief.nl/css/hiraku.css">
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
 </head>
 
 <body class="dark">
-<!-- <body> -->
    <main>
       <div class="container">
          <header>
@@ -49,10 +42,6 @@
             </div>
 
          </header>
-
-         <!-- <div class="toggle-container">
-  <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
-</div>  Dark Mode -->
 
          <div class="cards-top">
 
@@ -163,24 +152,15 @@
             </div>
          </div>
 
-         <div class="attribution">
+         <!-- <div class="attribution">
 
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="mailto:janjochemo@gmail.com">Jan Jochem Overgaauw</a>.
-         </div>
+         </div> -->
       </div>
    </main>
 </body>
 <script>
-
-   // $('#myonoffswitch').click(function() {
-   //    $('.toggle').toggleClass('red green');
-   // });
-
-   // $('#myonoffswitch').change(function () {
-   //     $('body').toggleClass('light');
-   // });
-
    $('#myonoffswitch').on('click', function() {
   $('body').toggleClass("dark light");
 });
