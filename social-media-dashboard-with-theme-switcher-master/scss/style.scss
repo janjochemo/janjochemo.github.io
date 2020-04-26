@@ -200,12 +200,15 @@ label:active:after {
 
 .cards-top{
 	display: flex; /* or inline-flex */
-
-	@media (min-width: 992px) {
-		flex-direction: row;
-	}
 	flex-direction: column;
+
+	@media (min-width: 375px) {
+	flex-direction: row;
+	}
+
+	// border: 2px solid green;
 	justify-content:space-between;
+	flex-wrap:wrap;
 
 	.instagram:before{
 		background: rgba(179,113,6,1);
@@ -262,68 +265,70 @@ label:active:after {
 			margin:10px 0;
 			position:relative;
 			background:var(--color-card-bg);
+			flex-basis: 100%;
+			border-radius:5px;
+			overflow: hidden;
+			margin-bottom:10px;
 
-		@media (min-width: 992px) {
-			flex-basis: 23%;
-			margin:0;
-		}
-
-
-		flex-basis: 100%;
-		border-radius:5px;
-		overflow: hidden;
-
-		.wrapper{
-			padding: 26px 0;
-			overflow:hidden;
-
-			span{
-				display: block;
-				text-align:center;
+			@media (min-width: 375px) {
+				flex-basis: 49%;
 			}
-			.social{
-				font-weight: 700;
+			@media (min-width: 768px) {
+				flex-basis: 23%;
 			}
 
-			.social:before{
-				content:'';
-				display: inline-block;
-				position: relative;
-				width:22px;
-				height:22px;
-				background-repeat:no-repeat;
-				background-position: center center;
-				position: relative;
-				top:6px;
-				left:-5px;
-			}
+			.wrapper{
+				padding: 26px 0;
+				overflow:hidden;
 
-			.social,.number-status{
-				font-size:12px;
-				position: relative;
-				font-weight:700;
-			}
-			.number{
-				font-size:30px;
-				font-size:3rem;
-				padding:24px 0 7px 0;
-				color: var(--color-heading);
-			}
-			.number-text{
-				font-size: 12px;
-				font-weight:400;
-				text-transform: uppercase;
-				letter-spacing: 4px;
-				padding:0 0 23px 0;
+				span{
+					display: block;
+					text-align:center;
+				}
+				.social{
+					font-weight: 700;
+				}
+
+				.social:before{
+					content:'';
+					display: inline-block;
+					position: relative;
+					width:22px;
+					height:22px;
+					background-repeat:no-repeat;
+					background-position: center center;
+					position: relative;
+					top:6px;
+					left:-5px;
+				}
+
+				.social,.number-status{
+					font-size:12px;
+					position: relative;
+					font-weight:700;
+				}
+				.number{
+					font-size:30px;
+					font-size:3rem;
+					padding:24px 0 7px 0;
+					color: var(--color-heading);
+				}
+				.number-text{
+					font-size: 12px;
+					font-weight:400;
+					text-transform: uppercase;
+					letter-spacing: 4px;
+					padding:0 0 23px 0;
+				}
 			}
 		}
 	}
-}
 
 .cards-bottom{
 	display: flex; /* or inline-flex */
 	flex-direction: column;
-	@media (min-width: 992px) {
+
+	@media (min-width: 375px) {
 	flex-direction: row;
 	}
 
@@ -336,7 +341,11 @@ label:active:after {
 		flex-basis: 100%;
 		margin-bottom: 20px;
 
-		@media (min-width: 992px) {
+		@media (min-width: 375px) {
+			flex-basis: 49%;
+
+		}
+		@media (min-width: 768px) {
 			flex-basis: 23%;
 		}
 

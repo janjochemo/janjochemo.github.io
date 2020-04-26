@@ -210,9 +210,10 @@ label:active:after {
   /* or inline-flex */
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 375px) {
   .cards-top {
     flex-direction: row;
   }
@@ -275,12 +276,18 @@ label:active:after {
   flex-basis: 100%;
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 375px) {
+  .cards-top .card {
+    flex-basis: 49%;
+  }
+}
+
+@media (min-width: 768px) {
   .cards-top .card {
     flex-basis: 23%;
-    margin: 0;
   }
 }
 
@@ -340,7 +347,7 @@ label:active:after {
   flex-wrap: wrap;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 375px) {
   .cards-bottom {
     flex-direction: row;
   }
@@ -354,7 +361,13 @@ label:active:after {
   height: 126px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 375px) {
+  .cards-bottom .card-small {
+    flex-basis: 49%;
+  }
+}
+
+@media (min-width: 768px) {
   .cards-bottom .card-small {
     flex-basis: 23%;
   }
