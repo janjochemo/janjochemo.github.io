@@ -59,6 +59,7 @@ h1,h2,h3{
 
 .contact h2{
   font-size: 55px;
+  line-height: 55px;
 }
 
 h1, h2{
@@ -68,7 +69,33 @@ h1, h2{
 h3{
   font-size: 30px;
 }
+a.btn{
+  padding: 10px 30px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  color:white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+}
 
+main{
+  .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: hsl(256, 26%, 20%);
+    padding:60px;
+    color: white;
+
+    span{
+      align-self: center;
+
+    }
+    a{}
+    }
+}
 footer{
   background: hsl(0, 0%, 98%);
 
